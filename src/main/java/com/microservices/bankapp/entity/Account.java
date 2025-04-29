@@ -6,11 +6,11 @@ import jakarta.persistence.*;
 import lombok.*;
 @Entity
 @Table(name = "accounts")
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+
 @JsonIgnoreProperties({"customer"})
 public class Account {
 

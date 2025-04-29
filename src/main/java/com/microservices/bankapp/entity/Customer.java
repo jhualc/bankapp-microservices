@@ -6,10 +6,10 @@ import lombok.*;
 @Entity
 @Table(name = "customers")
 @PrimaryKeyJoinColumn(name = "customer_id")
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Customer extends Person {
 
     @Column(nullable = false)

@@ -1,5 +1,6 @@
 package com.microservices.bankapp.dto;
 
+import com.microservices.bankapp.enums.TransactionType;
 import lombok.Data;
 import java.time.LocalDateTime;
 
@@ -7,7 +8,7 @@ import java.time.LocalDateTime;
 public class TransactionDTO {
     private Long transactionId;
     private LocalDateTime date;
-    private String transactionType;
+    private TransactionType type;
     private Double amount;
     private Double availableBalance;
     private Long accountId;

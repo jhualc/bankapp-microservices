@@ -56,7 +56,7 @@ public class TransactionServiceImpl implements TransactionService {
         }
 
         Transaction transaction = new Transaction();
-        transaction.setTransactionType(TransactionType.valueOf(dto.getTransactionType()));
+        transaction.setTransactionType(dto.getType());
         transaction.setAmount(dto.getAmount());
         transaction.setDate(LocalDateTime.now());
         transaction.setAccount(account);
@@ -106,7 +106,7 @@ public class TransactionServiceImpl implements TransactionService {
         TransactionDTO dto = new TransactionDTO();
         dto.setTransactionId(transaction.getTransactionId());
         dto.setDate(transaction.getDate());
-        dto.setTransactionType(transaction.getTransactionType().toString());
+        dto.setType(transaction.getTransactionType());
         dto.setAmount(transaction.getAmount());
         dto.setAvailableBalance(transaction.getAvailableBalance());
         dto.setAccountId(transaction.getAccount().getAccountId());

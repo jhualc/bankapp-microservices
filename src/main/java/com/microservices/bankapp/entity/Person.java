@@ -5,8 +5,7 @@ import lombok.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public abstract class Person {
