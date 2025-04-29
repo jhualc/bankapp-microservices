@@ -127,17 +127,6 @@ frontend/
 └── angular.json
 ```
 
----
-
-## 📈 Próximos pasos sugeridos
-
-- Implementar **pruebas unitarias** en el frontend.
-- Mejorar seguridad (JWT para autenticación).
-- Implementar manejo de roles (admin, user).
-- Deploy en servicios cloud (AWS, Azure, etc).
-
----
-
 ## 📜 Licencia
 
 Este proyecto es de uso educativo para demostraciones técnicas.\
